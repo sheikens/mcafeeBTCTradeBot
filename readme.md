@@ -1,6 +1,6 @@
 Hello,
 
-Welcome to my project, feel free to send me an email at nate_km@protonmail.com.
+Welcome to my project, feel free to send me an email at nateKM1@protonmail.com.
 
 Support for more exchanges coming soon!
 
