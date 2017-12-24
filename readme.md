@@ -14,8 +14,7 @@ How to use:
   
  How to Set Up:
  
-    1. You must get your twitter API consumer_key, consumer_secret, access_token, and access_token_secret and enter them on lines 14-18. This allows you to connect to a users twitter stream.
-    
+    You must get your twitter API consumer_key, consumer_secret, access_token, and access_token_secret and enter them on lines 14-18. This allows you to connect to a users twitter stream.
     
     ```
     const T = new Twit({
@@ -26,16 +25,16 @@ How to use:
    });
   ```
   
-  2. You must give this program your Poloniex API_Key, and Secret that goes along with it (on lines 5, 6)
+  You must give this program your Poloniex API_Key, and Secret that goes along with it (on lines 5, 6)
   
   ```
   const API_KEY = '';
   const SECRET = '';
   ```
   
-  3. You must choose if you want to use 'safeCheck' or not (default is true). Safecheck makes sure that the given tweet has the string 'coin of the day' inside of it and wont buy any match without it. With safeCheck as false it will purchase any 'coin' it sees in the tweet stream.
+  You must choose if you want to use 'safeCheck' or not (default is true). Safecheck makes sure that the given tweet has the string 'coin of the day' inside of it and wont buy any match without it. With safeCheck as false it will purchase any 'coin' it sees in the tweet stream.
   
-  4. Setting up Poloniex Class
+  Setting up Poloniex Class
   
   ```
   const polo = new Poloniex(API_KEY, SECRET, 0, 0);
@@ -49,7 +48,7 @@ How to use:
   ```
   
   
-  5. To Run, make sure to have node.js + npm installed https://nodejs.org/en/
+ To Run, make sure to have node.js + npm installed https://nodejs.org/en/
   The first command changes your current directory
   The second command installs dependencies
   The third command starts the program
