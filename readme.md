@@ -7,7 +7,7 @@ Support for more exchanges coming soon!
 Feel free to send me a Bitcoin Cash donation here (1NLkGPnNbT9iCJ35U9UfsURANtYgNREVtq)
 or email me if you want to send me something else and I will respond with an address.
 
-How to use:
+How to use: 
 
   This monitors a users twitter stream (instant) and acts on every
   tweet that It sees. It is currently pointed at the correct one.
