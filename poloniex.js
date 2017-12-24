@@ -32,7 +32,8 @@ class polo {
 
   buy(buyprice, currencyPair) {
     const amount = this.buyAmount / buyprice;
-    this.poloniex.buy(currencyPair, buyprice, amount, false, false, false)
+    console.log(amount);
+    this.poloniex.buy(currencyPair, buyprice, amount.toFixed(4), false, false, false)
     .then(result => console.log(`Made Purchase ${JSON.stringify(result)}`))
     .catch(err => console.log(err));
   }

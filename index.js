@@ -57,9 +57,11 @@ function isIn(id) {
   return false;
 }
 
-/*
-Test
-let a = 'zec coin of the day';
 
-checkTweet(a);
+/*
+Make sure below is commented out otherwise it will go bad
+Test @ works Made Purchase {"orderNumber":"91514514058","resultingTrades":[{"amount":"0.00270000","date":"2017-12-24 ","rate":"0.03711015","total":"0.00010019","tradeID":"","type":"buy"}]}
+//let a = 'zec coin of the day';
+
+//checkTweet(a);
 */
