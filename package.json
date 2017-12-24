@@ -1,0 +1,19 @@
+{
+  "name": "mcaffe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cryptopia-node": "^0.7.0",
+    "nodemon": "^1.14.3",
+    "poloniex-api-node": "^1.6.5",
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Kamm kamm@sonoma.edu",
+  "license": "ISC"
+}
