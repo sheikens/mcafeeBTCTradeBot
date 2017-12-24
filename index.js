@@ -1,19 +1,15 @@
 const Twit = require('twit');
 const names = require('./names.js');
-const Poloniex = require('poloniex-api-node');
-
+const Poloniex = require('./poloniex');
 
 const API_KEY = '';
 const SECRET = '';
-let poloniex = new Poloniex(API_KEY, SECRET);
 
 var IDChecked = [];
-var CoinsDetected = [];
-const safeCheck = true; //HIGHLY recomended~~!
-const buyAmount = 0; //Amount must be at least 0.000001. This value in BTC
+const safeCheck = true; //HIGHLY recomended~
 
-
-
+/* See Documentation on poloniex.js */
+const polo = new Poloniex(API_KEY, SECRET, 0, 0);
 
 const T = new Twit({
   consumer_key: '',
@@ -37,13 +33,15 @@ function checkTweet(text){
   if (safeCheck) {
     for (var val of names) {
       if (text.includes(val.toLowerCase()) && text.toLowerCase().includes('coin of the day')) {
-        checkBalancesandBuy(val.toUpperCase());
+        console.log(`${text} :: ${val}`);
+        polo.checkBalancesandBuy(val.toUpperCase());
       }
     }
   } else {
     for (var val of names) {
       if (text.includes(val)) {
-        console.log(`Not safecheck and tweet is ${text}`);
+        console.log(`${text} :: ${val}`);
+        polo.checkBalancesandBuy(val.toUpperCase());
       }
     }
   }
@@ -59,34 +57,8 @@ function isIn(id) {
   return false;
 }
 
-
-function checkBalancesandBuy(val) {
-  poloniex.returnBalances((err, balance) => {
-    if (err) throw err;
-    if (balance.BTC >= buyAmount) {
-      const currencyPair = `BTC_${val}`;
-      poloniex.returnOrderBook(currencyPair, 1, (err, result) => {
-        if (err) throw err;
-        let buyPrice = result.asks[0][0]; //might want to increase by a fraction of a percent.
-        buy(buyPrice, currencyPair);
-      })
-    }
-  })
-}
-
-function buy(buyprice, currencyPair) {
-  //buy(currencyPair, rate, amount, fillOrKill, immediateOrCancel, postOnly [, callback]) ; feel free to change settings to make it safer
-
-  const amount = buyAmount / buyprice;
-  poloniex.buy(currencyPair, buyprice, amount, false, false, false, (err, result) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(`MADE PURCHASE ${result}`);
-    }
-  });
-}
-/* test
+/*
+Test
 let a = 'zec coin of the day';
 
 checkTweet(a);
