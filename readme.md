@@ -39,13 +39,15 @@ How to use:
   4. Setting up Poloniex Class
 
 ```javascript
-  const polo = new Poloniex(API_KEY, SECRET, 0, 0);
+  const polo = new Poloniex(API_KEY, SECRET, buyAmount, markup, resell, sellMarkup);
   /*
   // const polo = new Poloniex(API_KEY, SECRET, buyAmount (default set), markup (default set as 0));
-  API_KEY = the api key you recieve from the exchange poloniex;
-  SECRET = the secret you recieve from the exchange poloniex;
-  buyAmount = the amount of BTC you want to spend on the coin that was just tweeted about (min 0.000001);
-  markup = incase another bot gets a request in faster and clears the book, this lets you send a buy with a markup.      Recomended @ should be .01 - .05;
+  API_KEY = the api key you recieve from the exchange poloniex; set on line 5
+  SECRET = the secret you recieve from the exchange poloniex;   set on line 6
+  buyAmount = the amount of BTC you want to spend on the coin that was just tweeted about (min 0.000001); set on line 12
+  markup = incase another bot gets a request in faster and clears the book, this lets you send a buy with a markup.      Recomended @ should be .01 - .05; set on line 13
+  Resell = if you want to resell the shitcoin instantly, is boolean (true or false) set on line 14
+  sellMarkup = the markup you want to resell said shitcoin..example 1.15 will resell at purchased price + 15% set on line 15
 */
 ```
 
@@ -59,6 +61,3 @@ How to use:
    2. npm install
    3. node index.js
 ```
-
-
- 
