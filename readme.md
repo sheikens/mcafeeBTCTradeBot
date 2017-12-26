@@ -7,6 +7,8 @@ Support for more exchanges coming soon!
 Feel free to send me a Bitcoin Cash donation here (1NLkGPnNbT9iCJ35U9UfsURANtYgNREVtq)
 or email me if you want to send me something else and I will respond with an address.
 
+I also have a bot that can read text off images (so you can purchase coin of the week automatically based off his image), or one that takes input of a coin name, and automatically sends off buy + then sell. These are for sale at feel free to email me and make an offer (only 5 will be sold). (These support multiple exchanges)
+
 
 How to use:
 
