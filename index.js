@@ -11,7 +11,7 @@ const safeCheck = true; //HIGHLY recomended~
 
 const buyAmount = 0.0008;   /* Change this value to the amount you want to purchase for example 0.01 will purchase 0.01BTC worth of coin */
 const markup = 0;           /* % over market you want to send an order for incase other bot beats you */
-const resell = true;        /* set true if you want the bot to immediately resell the shitcoin, false if you want to hodl said shitcoin */
+const resell = false;        /* set true if you want the bot to immediately resell the shitcoin, false if you want to hodl said shitcoin */
 const sellMarkup = 1;    /* markup you want the bot to sell it at for example 1.15 will resell at purchased price + 15% */
 /* See Documentation on poloniex.js */
 /* constructor(API_KEY, SECRET, buyAmount, markup, resell, sellmarkup = 1) */
