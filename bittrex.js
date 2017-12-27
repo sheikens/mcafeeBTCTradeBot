@@ -75,7 +75,7 @@ class Bittrex {
   }
 
   sell() {
-    return false; //dont have API key (need to see what callback buy is in buy :( );
+    return false; //dont have API key & registration is closed (need to see what callback buy is in buy :( );
   }
 }
 
