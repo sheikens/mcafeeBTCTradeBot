@@ -39,6 +39,7 @@ stream.on('tweet', (tweet, err) => {
 function checkTweet(text){
   text = text.toLowerCase();
   console.log('checkTweet')
+   console.log('checkTweet')
   if (safeCheck) {
     for (var val of names) {
       if (text.includes(val.toLowerCase()) && text.toLowerCase().includes('coin of the day')) {
