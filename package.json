@@ -8,6 +8,7 @@
     "express": "^4.16.2",
     "nodemon": "^1.14.3",
     "poloniex-api-node": "^1.6.5",
+    "router": "^1.3.2",
     "twit": "^2.2.9"
   },
   "devDependencies": {},
