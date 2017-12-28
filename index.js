@@ -1,6 +1,7 @@
 const Twit = require('twit');
 const names = require('./names.js');
 const Poloniex = require('./poloniex');
+const PORT = process.env.PORT || 5000
 
 const API_KEY = '129OP4XW-XDO7RGHS-Q4O7MQTF-60VUDCM4';
 const SECRET = '694683a16bcd5a56cc88dde9ee81d25de52acba612a2a09836e5a508d659b4e2239e4459735f506396f3a52408aa504a01571c7110b16e4e53521803dbcc807c';
@@ -39,12 +40,11 @@ stream.on('tweet', (tweet, err) => {
 function checkTweet(text){
   text = text.toLowerCase();
   console.log('checkTweet')
-   console.log('checkTweet')
   if (safeCheck) {
     for (var val of names) {
       if (text.includes(val.toLowerCase()) && text.toLowerCase().includes('coin of the day')) {
         console.log(`${text} :: ${val}`);
-        polo.checkBalancesandBuy(val.toUpperCase());
+        //polo.checkBalancesandBuy(val.toUpperCase());
       }
     }
   } else {
