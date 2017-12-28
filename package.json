@@ -11,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-     "start": "node index.js",
+     "start": "node index.js"
+  },
   "author": "Nathan Kamm kamm@sonoma.edu",
   "license": "ISC"
 }
