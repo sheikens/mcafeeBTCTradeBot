@@ -18,7 +18,7 @@ const T = new Twit({
   access_token_secret: 'mHY2bHRjj1iKSNVXEwCCwUCZfuttZiehOZnSZf8B3Ug00'
 });
 
-console.log('start')
+console.log('start app')
 //961445378
 var express = require('express');
 var app = express();
